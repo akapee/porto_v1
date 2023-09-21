@@ -355,7 +355,7 @@ main {
   }
 }
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 607px) {
   .hero_textName{
   font-size: 1.5rem;
   }
@@ -417,11 +417,12 @@ main {
   width: 150px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .about {
     gap: 0;
     flex-direction: column-reverse;
     height: auto;
+    padding: 100px 80px;
   }
   .about_text {
     margin: 0 auto 2rem;
@@ -435,6 +436,15 @@ main {
   }
   .profile__img img {
     width: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    gap: 0;
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 100px 40px;
   }
 }
 
@@ -491,6 +501,7 @@ main {
   display: grid;
   margin: 0 auto;
   gap: 0.1rem;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card_skills {
@@ -499,6 +510,7 @@ main {
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
   overflow: hidden;
+  
 }
 
 .card_content_skills {
@@ -512,9 +524,13 @@ main {
   vertical-align: middle;
 }
 
-@media (min-width: 900px) {
+@media (max-width: 700px) {
+  .skills {
+    height: auto;
+    padding: 60px 80px;
+  }
   .cards_skills {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 .cards_item_skills {
