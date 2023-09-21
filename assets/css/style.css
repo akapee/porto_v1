@@ -493,8 +493,8 @@ main {
   background-color: var(--body-color);
 }
 
-.filters__sections {
-}
+/* .filters__sections {
+} */
 
 .cards_skills {
   max-width: 1200px;
