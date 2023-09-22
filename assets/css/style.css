@@ -338,7 +338,7 @@ main {
   .hero_text {
     text-align: center;
   }
-  
+
   .hero_btn {
     justify-content: center;
   }
@@ -356,12 +356,10 @@ main {
 }
 
 @media screen and (max-width: 607px) {
-  .hero_textName{
-  font-size: 1.5rem;
+  .hero_textName {
+    font-size: 1.5rem;
   }
-
 }
-
 
 /* ABOUT SECTION */
 .about {
@@ -417,6 +415,84 @@ main {
   width: 150px;
 }
 
+.experience {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  height: 80vh;
+  position: relative;
+  height: 100%;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 140px;
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 20px;
+}
+
+.col header.title {
+  font-family: helvetica;
+  color: #000000;
+  padding: 0 0 20px 30px;
+}
+
+.col .contents {
+  padding: 0 30px;
+  border-left: 2px solid #bababa;
+}
+
+.col .contents .box {
+  position: relative;
+  padding: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.4s;
+  margin-bottom: 20px;
+}
+
+.col .contents .box::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  right: calc(100% + 22px);
+  top: 0;
+  background-color: #11a372;
+}
+
+.box h3 {
+  font-size: 19px;
+  padding: 5px 0 6px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.box h4 {
+  position: relative;
+  color: #11a372;
+}
+
+.box p {
+  line-height: 1.2;
+  color: #666;
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  main.row {
+    grid-template-columns: 1fr;
+  }
+  .row .col:nth-child(2) {
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .about {
     gap: 0;
@@ -456,12 +532,14 @@ main {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding: 50px 140px;
+  padding-top: 3.15rem;
+  padding-left: 8.75rem;
+  padding-right: 8.75rem;
   display: flex;
 }
 
 .btnfilters_skills {
-  margin: 2rem 0 2.5rem;
+  margin: 2rem 0 0.1rem;
   background-color: var(--text-color-lighten);
   padding: 0.375rem;
   border-radius: 0.6rem;
@@ -493,9 +571,6 @@ main {
   background-color: var(--body-color);
 }
 
-/* .filters__sections {
-} */
-
 .cards_skills {
   max-width: 1200px;
   display: grid;
@@ -504,13 +579,17 @@ main {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.cards_item_skills {
+  display: flex;
+  padding: 0.4rem;
+}
+
 .card_skills {
   background-color: rgb(255, 255, 255);
   border-radius: 0.6rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
   overflow: hidden;
-  
 }
 
 .card_content_skills {
@@ -524,25 +603,40 @@ main {
   vertical-align: middle;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 1280px) {
   .skills {
-    height: auto;
-    padding: 60px 8px;
+    padding-top: 3.15rem;
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
   }
-  .cards_skills {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-.cards_item_skills {
-  display: flex;
-  padding: 1rem;
 }
 
-@media (min-width: 56rem) {
-  .cards_item_skills {
-    width: 100%;
+@media (min-width: 1024px) {
+  .skills {
+    padding-top: 3.15rem;
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
   }
 }
+
+@media (max-width: 768px) {
+  .skills {
+    padding-top: 3.15rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .cards_skills {
+    max-width: 1200px;
+    display: grid;
+    margin: 0 auto;
+    gap: 0.1rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
 
 /* PROJECTS SECTION */
 .project {
@@ -552,7 +646,9 @@ main {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding: 50px 140px;
+  padding-top: 3.15rem;
+  padding-left: 8.75rem;
+  padding-right: 8.75rem;
   display: flex;
 }
 
@@ -603,6 +699,7 @@ main {
   display: grid;
   margin: 0 auto;
   gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .card_image_projects img {
@@ -639,18 +736,36 @@ main {
 .icon_tech img {
   width: 30px;
 }
-@media (min-width: 900px) {
-  .cards_projects {
-    grid-template-columns: repeat(2, 1fr);
+@media (min-width: 1280px) {
+  .project {
+    padding-top: 3.15rem;
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
   }
-}
-.cards_item_projects {
-  display: flex;
-  padding: 1rem;
 }
 
-@media (min-width: 56rem) {
-  .cards_item_projects {
-    width: 100%;
+@media (min-width: 1024px) {
+  .project {
+    padding-top: 3.15rem;
+    padding-left: 8.75rem;
+    padding-right: 8.75rem;
   }
 }
+
+@media (max-width: 768px) {
+  .project {
+    padding-top: 3.15rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .cards_projects {
+    max-width: 1200px;
+    display: grid;
+    margin: 0 auto;
+    gap: 0.1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
