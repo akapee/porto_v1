@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none;
   font-family: "montserrat";
+  list-style: none;
 }
 
 /* FONTS */
@@ -282,6 +282,10 @@ main {
   border: none;
 }
 
+.btn a {
+  color: #fff;
+}
+
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
@@ -373,7 +377,9 @@ main {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding: 100px 140px;
+  padding-top: 100px;
+  padding-left: 140px;
+  padding-right: 140px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -437,9 +443,8 @@ main {
 }
 
 .col header.title {
-  font-family: helvetica;
   color: #000000;
-  padding: 0 0 20px 30px;
+  padding-bottom: 20px;
 }
 
 .col .contents {
@@ -449,8 +454,7 @@ main {
 
 .col .contents .box {
   position: relative;
-  padding: 20px;
-  background-color: #ffffff;
+  padding: 0 20px 20px 0;
   cursor: pointer;
   transition: all 0.4s;
   margin-bottom: 20px;
@@ -464,8 +468,10 @@ main {
   border-radius: 50%;
   right: calc(100% + 22px);
   top: 0;
-  background-color: #11a372;
+  background-color: #112a21;
 }
+
+
 
 .box h3 {
   font-size: 19px;
@@ -476,14 +482,15 @@ main {
 
 .box h4 {
   position: relative;
-  color: #11a372;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.box p {
-  line-height: 1.2;
-  color: #666;
-  font-size: 17px;
+.col .contents .box ul {
+  list-style: square;
+
 }
+
 
 @media (max-width: 768px) {
   main.row {
@@ -520,7 +527,12 @@ main {
     gap: 0;
     flex-direction: column-reverse;
     height: auto;
-    padding: 100px 40px;
+    padding: 100px 40px 0 40px;
+
+  }
+
+  .experience {
+    padding: 0 40px 0 40px;
   }
 }
 
@@ -693,7 +705,9 @@ main {
   flex-direction: column;
   overflow: hidden;
 }
-
+.contentCard_projects{
+  
+}
 .cards_projects {
   max-width: 1200px;
   display: grid;
