@@ -1,5 +1,5 @@
 ---
 deployment:
 tasks:
-- export DEPLOYPATH=/home/akapemyi/public_html/git
-- /bin/cp -r * $DEPLOYPATH
+- export DEPLOYPATH=/home/akapemyi/public_html/
+- /bin/cp -R * $DEPLOYPATH
