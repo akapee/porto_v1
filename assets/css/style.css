@@ -8,7 +8,7 @@
 }
 
 /* FONTS */
-@import url("https://fonts.googleapis.com/css2?family=Amaranth:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Lilita+One&family=Poppins:wght@400;500;600&display=swap');
 
 /* ===== Colours ===== */
 :root {
@@ -271,7 +271,7 @@ main {
   font-style: italic;
 }
 .hero_textName {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lilita One', cursive;
   font-size: 2.5rem;
   font-weight: 900;
 }
@@ -654,7 +654,7 @@ main {
 }
 
 .card_content_skills {
-  padding: 1rem;
+  padding: 2rem;
   background: #ffffffc0;
 }
 

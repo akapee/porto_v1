@@ -68,23 +68,23 @@
           <!--=============== FILTERS TABS ===============-->
           <ul class="btnfilters_skills">
             <button
-              type="button"
-              class="skillsTab-btn filter-tab-active language"
+            data-tabs="language" type="button"
+              class="skillsTab-btn filter-tab-active"
             >
               Language
             </button>
-            <button type="button" class="skillsTab-btn framework">
+            <button data-tabs="framework" type="button" class="skillsTab-btn">
               Framework
             </button>
-            <button type="button" class="skillsTab-btn library">Library</button>
-            <button type="button" class="skillsTab-btn database">
+            <button data-tabs="library" type="button" class="skillsTab-btn">Library</button>
+            <button data-tabs="database" type="button" class="skillsTab-btn">
               Database
             </button>
           </ul>
           <!--=============== END FILTERS TABS ===============-->
           <div class="contentCard_skills">
             <ul class="cards_skills">
-              <li class="cards_item_skills" id="framework">
+              <li class="cards_item_skills" data-id="language">
                 <div class="card_skills">
                   <div class="card_content_skills">
                     <img src="assets/img/html.png" alt="" />
@@ -92,23 +92,42 @@
                 </div>
               </li>
 
-              <li class="cards_item_skills" id="framework">
+              <li class="cards_item_skills" data-id="language">
                 <div class="card_skills">
                   <div class="card_content_skills">
-                    <img src="assets/img/kotlin.png" alt="" />
+                    <img src="assets/img/css.png" alt="" />
                   </div>
                 </div>
               </li>
-
-              <li class="cards_item_skills" id="framework">
+              <li class="cards_item_skills" data-id="language">
                 <div class="card_skills">
                   <div class="card_content_skills">
                     <img src="assets/img/javascript.png" alt="" />
                   </div>
                 </div>
               </li>
-
-              <li class="cards_item_skills" id="framework">
+              <li class="cards_item_skills" data-id="language">
+                <div class="card_skills">
+                  <div class="card_content_skills">
+                    <img src="assets/img/php.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item_skills" data-id="database">
+                <div class="card_skills">
+                  <div class="card_content_skills">
+                    <img src="assets/img/tailwind.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item_skills" data-id="library">
+                <div class="card_skills">
+                  <div class="card_content_skills">
+                    <img src="assets/img/mysql.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="cards_item_skills" data-id="framework">
                 <div class="card_skills">
                   <div class="card_content_skills">
                     <img src="assets/img/html.png" alt="" />
@@ -116,37 +135,7 @@
                 </div>
               </li>
 
-              <li class="cards_item_skills" id="framework">
-                <div class="card_skills">
-                  <div class="card_content_skills">
-                    <img src="assets/img/html.png" alt="" />
-                  </div>
-                </div>
-              </li>
-
-              <li class="cards_item_skills" id="framework">
-                <div class="card_skills">
-                  <div class="card_content_skills">
-                    <img src="assets/img/html.png" alt="" />
-                  </div>
-                </div>
-              </li>
-
-              <li class="cards_item_skills" id="framework">
-                <div class="card_skills">
-                  <div class="card_content_skills">
-                    <img src="assets/img/html.png" alt="" />
-                  </div>
-                </div>
-              </li>
-
-              <li class="cards_item_skills" id="framework">
-                <div class="card_skills">
-                  <div class="card_content_skills">
-                    <img src="assets/img/html.png" alt="" />
-                  </div>
-                </div>
-              </li>
+              
             </ul>
           </div>
         </div>
@@ -154,5 +143,6 @@
     </main>
     <!-- ===== JS ===== -->
     <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   </body>
 </html>
