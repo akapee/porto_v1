@@ -45,4 +45,73 @@ body.addEventListener("click", (e) => {
 });
 
 
-//FILTERTABS
+//FILTERTABS SKILLS
+const skillsBtn = document.querySelectorAll('.skillsTab-btn');
+const skillItem = document.querySelectorAll('.cards_item_skills');
+
+let activeBtn = "language";
+
+showSkillsItem(activeBtn);
+
+skillsBtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        resetActiveBtn();
+        showSkillsItem(btn.id);
+        btn.classList.add('active-btn');
+    });
+});
+
+function resetActiveBtn(){
+    skillsBtn.forEach((btn) => {
+        btn.classList.remove('active-btn');
+    });
+}
+
+function showSkillsItem(newMenuBtn){
+    activeBtn = newMenuBtn;
+    skillItem.forEach((item) => {
+        if(item.classList.contains(activeBtn)){
+            item.style.display = "grid";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+
+const projectsBtn = document.querySelectorAll('.projectsTab-btn');
+const projectsItem = document.querySelectorAll('.cards_item_projects');
+
+let activeBtns = "website";
+
+showProjectsItem(activeBtns);
+
+projectsBtn.forEach((btn) => {
+    btn.addEventListener('click', () => {
+        resetActiveBtn();
+        showProjectsItem(btn.id);
+        btn.classList.add('active-btns');
+    });
+});
+
+function resetActiveBtn(){
+    projectsBtn.forEach((btn) => {
+        btn.classList.remove('active-btns');
+    });
+}
+
+function showProjectsItem(newMenuBtn){
+    activeBtns = newMenuBtn;
+    projectsItem.forEach((item) => {
+        if(item.classList.contains(activeBtns)){
+            item.style.display = "grid";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+
+
+// FILTERTABS PROJECTS
+
+
+

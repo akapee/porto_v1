@@ -628,7 +628,7 @@ main {
   background-color: var(--body-color);
 }
 
-.filter-tab-active {
+.active-btn {
   background-color: var(--body-color);
 }
 
@@ -636,15 +636,24 @@ main {
   max-width: 1200px;
   display: grid;
   margin: 0 auto;
-  gap: 0.1rem;
+  gap: 1.5rem;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .cards_item_skills {
-  display: flex;
+  display: grid;
   padding: 0.4rem;
+  animation: fadeIn 2s;
+  overflow: hidden;
 }
-
+@keyframes fadeIn{
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}
 .card_skills {
   background-color: rgb(255, 255, 255);
   border-radius: 0.6rem;
@@ -695,13 +704,7 @@ main {
 
 }
 
-.show {
-  display: block;
-}
 
-.remove {
-  display: none;
-}
 
 
 /* PROJECTS SECTION */
@@ -744,10 +747,9 @@ main {
   background-color: var(--body-color);
 }
 
-.filter-tab-active {
+.active-btns {
   background-color: var(--body-color);
 }
-
 .card_projects {
   background-color: rgb(255, 255, 255);
   border-radius: 0.6rem;
@@ -781,7 +783,7 @@ main {
   color: #000000;
   font-size: 1.1rem;
   font-weight: 700;
-  letter-spacing: 1px;
+  line-height: 1.5;
   text-transform: capitalize;
   margin: 0px;
 }
